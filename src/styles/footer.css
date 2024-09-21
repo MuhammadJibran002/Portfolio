@@ -1,0 +1,16 @@
+.footer-tab {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.box-footer {
+    width: 255px;
+    height: auto;
+    margin: 10px;
+   
+}
+.footer-heading{
+    color: white;
+    font-size: 20px;
+}

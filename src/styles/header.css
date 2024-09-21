@@ -1,0 +1,135 @@
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+.profilepic {
+  background-image: url('../images/assets/images/MuhammadJibran.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 250px;
+  border-radius: 30%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Moving Border */
+.profilepic::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: -5px; /* Make space for the moving border */
+  left: -5px;
+  height: calc(100% + 10px); /* Expanding height to fit around the image */
+  width: calc(100% + 10px);  /* Expanding width to fit around the image */
+  border-radius: 30%;
+  border: 5px solid transparent; /* Invisible border for setup */
+  box-sizing: border-box;
+  background-image: linear-gradient(90deg, green, transparent);
+  background-size: 200% 200%; /* Size it to move */
+  animation: moving-border 4s linear infinite;
+}
+
+/* Keyframes for Moving Border Animation */
+@keyframes moving-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+.header {
+  height: 350px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#greenbackground{
+  background-image: url('../images/assets/images/greenbackground-removebg-preview.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+.menu-navbar{
+  width: 80% !important;
+  margin: auto !important;
+}
+@media (max-width: 576px) {
+  /* Smaller font size for mobile */
+  .mySlides q {
+      font-size: 1rem;
+  }
+  .slideshow-container {
+    position: absolute !important;
+    width: 900px;
+  }
+}

@@ -1,0 +1,20 @@
+.about{
+    background-image: url('../images/aboutback-removebg-preview.png'),
+    linear-gradient(rgba(0, 0, 0, 0.612),rgba(0, 1, 2, 0.429));
+    background-blend-mode:multiply ;
+    background-position: bottom bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.inner-container{
+    width: 80% !important;
+    margin: auto !important;
+    
+}
+ 
+.aboutpic{
+    width: 220px;
+    height: 300px;
+}
